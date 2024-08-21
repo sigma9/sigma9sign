@@ -6,6 +6,7 @@
 #
 #  id            :bigint           not null, primary key
 #  completed_at  :datetime
+#  declined_at   :datetime
 #  email         :string
 #  ip            :string
 #  metadata      :text             not null
@@ -59,8 +60,10 @@ class Submitter < ApplicationRecord
   scope :completed, -> { where.not(completed_at: nil) }
 
   def status
-    if completed_at?
-      'completo'
+    if declined_at?
+      'declined'
+    elsif completed_at?
+      'completed'
     elsif opened_at?
       'aberto'
     elsif sent_at?
@@ -83,6 +86,6 @@ class Submitter < ApplicationRecord
   end
 
   def status_event_at
-    completed_at || opened_at || sent_at || created_at
+    declined_at || completed_at || opened_at || sent_at || created_at
   end
 end
