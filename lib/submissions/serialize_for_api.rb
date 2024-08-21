@@ -6,7 +6,10 @@ module Submissions
       only: %i[id slug source submitters_order expire_at created_at updated_at archived_at],
       methods: %i[audit_log_url combined_document_url],
       include: {
-        submitters: { only: %i[id] },
+        submitters: { only: %i[id slug uuid name email phone
+                               completed_at opened_at sent_at declined_at
+                               created_at updated_at external_id metadata],
+                      methods: %i[status application_key] },
         template: { only: %i[id name external_id created_at updated_at],
                     methods: %i[folder_name] },
         created_by_user: { only: %i[id email first_name last_name] }
@@ -42,8 +45,12 @@ module Submissions
         json[:status] = 'completed'
         json[:completed_at] = last_submitter.completed_at
       else
-        json[:documents] = [] if with_documents
-        json[:status] = build_status(submission, submitters)
+        json[:documents] = []
+        json[:status] = if submitters.any?(&:declined_at?)
+                          'declined'
+                        else
+                          submission.expired? ? 'expired' : 'pending'
+                        end
         json[:completed_at] = nil
       end
 
