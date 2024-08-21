@@ -37,8 +37,8 @@ module Submitters
                       'template' => submitter.template.as_json(only: %i[id name external_id created_at updated_at],
                                                                methods: %i[folder_name]),
                       'submission' => {
-                        **submitter.submission.slice(:id, :audit_log_url, :combined_document_url, :created_at),
-                        status: build_submission_status(submitter.submission),
+                        **submitter.submission.slice(:id, :audit_log_url, :created_at),
+                        status: submitter.submission.submitters.all?(&:completed_at?) ? 'completed' : 'pending',
                         url: r.submissions_preview_url(submitter.submission.slug, **Docuseal.default_url_options)
                       })
     end
