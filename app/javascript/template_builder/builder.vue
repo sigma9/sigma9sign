@@ -405,7 +405,7 @@ import MobileFields from './mobile_fields'
 import { IconPlus, IconUsersPlus, IconDeviceFloppy, IconChevronDown, IconEye, IconWritingSign, IconInnerShadowTop, IconInfoCircle } from '@tabler/icons-vue'
 import { v4 } from 'uuid'
 import { ref, computed } from 'vue'
-import { en as i18nEn } from './i18n'
+import { en as i18nEn, ptPT as i18nPt } from './i18n'
 
 export default {
   name: 'TemplateBuilder',
@@ -759,7 +759,8 @@ export default {
   },
   methods: {
     t (key) {
-      return this.i18n[key] || i18nEn[key] || key
+      console.log(key, i18nPt)
+      return this.i18n[key] || i18nPt[key] || key
     },
     removePendingFields () {
       this.template.fields = this.template.fields.filter((f) => {

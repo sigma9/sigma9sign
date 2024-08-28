@@ -96,6 +96,7 @@ safeRegisterElement('template-builder', class extends HTMLElement {
 
     this.appElem.classList.add('md:h-screen')
 
+    console.log(this.dataset)
     this.app = createApp(TemplateBuilder, {
       template: reactive(JSON.parse(this.dataset.template)),
       backgroundColor: '#faf7f5',
