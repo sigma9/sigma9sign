@@ -7,13 +7,13 @@
 </div>
 <div class="flex justify-between mb-6 md:items-end flex-col md:flex-row">
   <div>
-    <h1 class="text-3xl font-bold md:block">Submissions <span class="badge badge-outline badge-lg align-middle">Archived</span></h1>
+    <h1 class="text-3xl font-bold md:block"><%= I18n.t('submissions') %> <span class="badge badge-outline badge-lg align-middle"><%= I18n.t('general_archive') %></span></h1>
   </div>
   <div class="flex space-x-2 mt-3 md:mt-0 justify-end">
     <%= render 'shared/search_input' %>
     <%= link_to new_template_submissions_export_path(@template), class: 'order-3 md:order-1 btn btn-ghost text-base', data: { turbo_frame: 'modal' } do %>
       <%= svg_icon('download', class: 'w-6 h-6 stroke-2') %>
-      <span>Export</span>
+      <span><%= I18n.t('general_export') %></span>
     <% end %>
   </div>
 </div>

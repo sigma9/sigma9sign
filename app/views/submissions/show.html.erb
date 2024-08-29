@@ -55,7 +55,7 @@
           <% end %>
         </div>
       <% elsif @submission.submitters.to_a.size == 1 && !@submission.expired? %>
-        <%= render 'shared/clipboard_copy', text: start_form_url(slug: @submission.template.slug), class: 'base-button', icon_class: 'w-6 h-6 text-white', copy_title: 'Copy Share Link', copied_title: 'Copied to Clipboard' %>
+        <%= render 'shared/clipboard_copy', text: start_form_url(slug: @submission.template.slug), class: 'base-button', icon_class: 'w-6 h-6 text-white', copy_title: I18n.t('copy_share_link'), copied_title: I18n.t('copied_to_clipboard') %>
       <% end %>
     </div>
   </div>

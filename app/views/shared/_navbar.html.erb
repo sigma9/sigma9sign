@@ -1,4 +1,4 @@
-<div class="max-w-6xl mb-4 mx-auto px-4 md:px-2 py-3 flex items-center justify-between rounded-box bg-base-300">
+<div class="max-w-6xl mb-4 mx-auto px-4 py-3 flex items-center justify-between rounded-box bg-base-300">
   <div class="flex items-center space-x-4">
     <a href="<%= root_path %>" class="text-2xl font-bold items-center flex space-x-2">
       <%= render 'shared/title' %>
@@ -6,7 +6,7 @@
   </div>
   <% if signed_in? %>
     <div class="space-x-4 flex items-center">
-   
+
         <div class="flex items-center justify-center space-x-4 mr-1">
           <%= render 'shared/navbar_buttons' %>
           <%= link_to 'Settings', settings_profile_index_path, class: 'hidden md:inline-flex font-medium text-lg' %>

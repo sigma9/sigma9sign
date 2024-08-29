@@ -63,7 +63,8 @@ en: &en
     scopes:
       write: Update your data
       read: Read your data
-
+  submissions_empty: There are no submissions
+  submissions_send_invite: Send an invitation to fill and complete the form
 es: &es
   role: Rol
   reason: Razón
@@ -239,6 +240,24 @@ pt: &pt
   templates_dropzone_upload_new: Clique para inserir ficheiro
   templates_dropzone_drop_message: Clique para inserir ou deixe cair aqui
   templates_dropzone_uploading: Carregando...
+  submissions_empty: Não há submissões ainda
+  submissions_send_invite: Envie convite para completar o ficheiro
+  submissions_send_recipients: Envie aos recipientes
+  submissions_sign_yourself: Assine você mesmo
+  submissions: Submissões
+  submissions_sign_now: Assine agora
+  general_add: Adicionar
+  general_export: Exportar
+  recipients: Recipientes
+  general_archive: Arquivo
+  general_archived: Arquivado
+  general_view: Ver
+  general_create: Criar
+  general_remvoe: Remover
+  general_copy: Copiar
+  general_copied: Copiado
+  copy_share_link: Copiar o link de partilha
+  copied_to_clipboard: Copiado para o Clipboard
 
 de: &de
   role: Rolle

@@ -5,7 +5,7 @@ module Docuseal
   PRODUCT_URL = 'https://www.corsar.sigma9.pt'
   NEWSLETTER_URL = "#{PRODUCT_URL}/newsletters".freeze
   ENQUIRIES_URL = "#{PRODUCT_URL}/enquiries".freeze
-  PRODUCT_NAME = 'Sigma9Seal'
+  PRODUCT_NAME = 'Sigma9Sign'
   DEFAULT_APP_URL = 'http://localhost:3000'
   GITHUB_URL = 'https://github.com/sigma9group/sigma9seal'
   DISCORD_URL = 'https://discord.gg/qygYCDGck9'
