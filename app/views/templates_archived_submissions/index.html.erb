@@ -2,7 +2,7 @@
 <div>
   <%= link_to template_path(@template) do %>
     &larr;
-    <span>Back to Active</span>
+    <span><%= I18n.t('templates_archived_back_to_active') %></span>
   <% end %>
 </div>
 <div class="flex justify-between mb-6 md:items-end flex-col md:flex-row">
@@ -24,7 +24,7 @@
 <% elsif params[:q].present? %>
   <div class="text-center">
     <div class="mt-16 text-3xl font-semibold">
-      Submissions not Found
+      <%= I18n.t('submissions') %> <%= I18n.t('not_found') %>
     </div>
   </div>
 <% end %>

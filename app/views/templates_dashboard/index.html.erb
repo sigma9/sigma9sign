@@ -27,7 +27,7 @@
 <% view_archived_html = capture do %>
   <% if has_archived %>
     <div>
-      <a href="<%= templates_archived_index_path %>" class="link text-sm">View Archived</a>
+      <a href="<%= templates_archived_index_path %>" class="link text-sm"><%= I18n.t('general_view') %> <%= I18n.t('general_archive') %></a>
     </div>
   <% end %>
 <% end %>

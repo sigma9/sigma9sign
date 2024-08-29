@@ -915,7 +915,6 @@ export default {
   },
   methods: {
     t (key) {
-      console.log(this.i18n,this.language)
       return this.i18n[key] || i18n[this.language?.toLowerCase()]?.[key] || i18n[this.browserLanguage]?.[key] || i18n.pt[key] || key
     },
     onOrientationChange (event) {

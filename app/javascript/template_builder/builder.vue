@@ -759,7 +759,6 @@ export default {
   },
   methods: {
     t (key) {
-      console.log(key, i18nPt)
       return this.i18n[key] || i18nPt[key] || key
     },
     removePendingFields () {

@@ -93,7 +93,7 @@
 <% view_archived_html = capture do %>
   <% if @template.submissions.where.not(archived_at: nil).exists? && !@template.archived_at? %>
     <div>
-      <a href="<%= template_archived_index_path(@template) %>" class="link text-sm">View Archived</a>
+      <a href="<%= template_archived_index_path(@template) %>" class="link text-sm"><%= I18n.t('general_view') %> <%= I18n.t('general_archive') %></a>
     </div>
   <% end %>
 <% end %>
