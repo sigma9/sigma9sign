@@ -117,7 +117,8 @@ const en = {
   custom: 'Custom',
   numbers_only: 'Numbers only',
   letters_only: 'Letters only',
-  regexp_validation: 'Regexp validation'
+  regexp_validation: 'Regexp validation',
+  save_and_preview: 'Save and Preview'
 }
 
 const ptPT = {
@@ -239,7 +240,8 @@ const ptPT = {
   custom: 'Personalizado',
   numbers_only: 'Apenas números',
   letters_only: 'Apenas letras',
-  regexp_validation: 'Validação por Regexp'
+  regexp_validation: 'Validação por Regexp',
+  save_and_preview: 'Gravar e Prever'
 }
 
 export { en, ptPT }

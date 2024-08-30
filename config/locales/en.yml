@@ -1,4 +1,4 @@
-en: &en
+langs: &langs
   language_en: English
   language_en-US: English (US)
   language_en-GB: English (UK)
@@ -18,6 +18,7 @@ en: &en
   language_nl: Nederlands
   language_ar: العربية
   language_ko: 한국어
+en: &en
   email: Email
   form_expired_at_html: 'Form expired on <span class="font-semibold">%{time}</span>'
   verification_code_code: 'Verification code: %{code}'
@@ -215,12 +216,12 @@ pt: &pt
   sending: Enviando
   resubmit: Reenviar
   or: ou
-  download_documents: Baixar documentos
-  downloading: Baixando
+  download_documents: Descarregar documentos
+  downloading: A Descarregar
   completed_successfully: Concluído com sucesso
   password: Senha
   sign_in: Entrar
-  signing_in: Entrando
+  signing_in: A Entrar
   sign_in_with_microsoft: Entrar com Microsoft
   sign_in_with_google: Entrar com Google
   forgot_your_password_: Esqueceu sua senha?
@@ -230,7 +231,7 @@ pt: &pt
   last_name: Sobrenome
   company_name_optional: Nome da empresa (opcional)
   sign_up: Inscrever-se
-  signing_up: Inscrevendo-se
+  signing_up: A Inscrevenr-se
   profile_details: Detalhes do perfil
   create_free_account: Criar conta gratuita
   sign_up_with_google: Inscrever-se com Google
@@ -239,7 +240,7 @@ pt: &pt
   enter_email_to_continue: Insira o e-mail para continuar
   templates_dropzone_upload_new: Clique para inserir ficheiro
   templates_dropzone_drop_message: Clique para inserir ou deixe cair aqui
-  templates_dropzone_uploading: Carregando...
+  templates_dropzone_uploading: A Carregar...
   templates_archived_back_to_active: Voltar aos activos
   templates_form_preview_exit: Sair do preview
   submissions_empty: Não há submissões ainda
@@ -252,18 +253,31 @@ pt: &pt
   general_export: Exportar
   recipients: Recipientes
   general_archive: Arquivo
+  archiving: A Arquivar
+  general_archive: Arquivo
+  general_toarchive: Arquivar
   general_archived: Arquivado
+  general_edit: Editar
   general_view: Ver
   general_create: Criar
   general_remove: Remover
   general_change: Mudar
   general_copy: Copiar
   general_copied: Copiado
+  general_clone: Clonar
   copy_share_link: Copiar o link de partilha
   copied_to_clipboard: Copiado para o Clipboard
   processing: A processar
   not_found: não encontrados
   folder: Pasta
+  devise:
+    sessions:
+      user:
+        signed_in: Iniciou a sessão
+        signed_out: Fechou a sessão
+      failure:
+        user:
+          invalid: Utilizador inválido
 
 de: &de
   role: Rolle
@@ -607,27 +621,34 @@ ko:
 
 en-US:
   <<: *en
+  <<: *langs
   date:
     formats:
       default: "%m/%d/%Y"
 
 en-GB:
   <<: *en
+  <<: *langs
   date:
     formats:
       default: "%d/%m/%Y"
 
 es-ES:
   <<: *es
+  <<: *langs
 
 fr-FR:
   <<: *fr
+  <<: *langs
 
 pt-PT:
   <<: *pt
+  <<: *langs
 
 de-DE:
   <<: *de
+  <<: *langs
 
 it-IT:
   <<: *it
+  <<: *langs
