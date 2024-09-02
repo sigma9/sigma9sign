@@ -8,7 +8,9 @@
     <div class="space-x-4 flex items-center">
         <div class="flex items-center justify-center space-x-4 mr-1">
           <%= render 'shared/navbar_buttons' %>
-          <%= link_to t('settings'), settings_profile_index_path, class: 'hidden md:inline-flex font-medium text-lg' %>
+          <% if current_user.role == 'admin' %>
+            <%= link_to t('settings'), settings_profile_index_path, class: 'hidden md:inline-flex font-medium text-lg' %>
+          <% end %>
         </div>
       <div class="dropdown dropdown-end">
         <label tabindex="0" class="cursor-pointer bg-base-content text-purple-300 rounded-full p-2 w-9 justify-center flex">

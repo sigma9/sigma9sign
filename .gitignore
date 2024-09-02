@@ -36,5 +36,7 @@ yarn-debug.log*
 /attachments
 /docuseal
 /ee
+/vendor
+
 dump.rdb
 pg_data

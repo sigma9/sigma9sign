@@ -27,7 +27,7 @@
     </label>
   </div>
   <div
-    v-if="['number', 'cells'].includes(field.type)"
+    v-if="['number', 'cells', 'text'].includes(field.type)"
     class="py-1.5 px-1 relative"
     @click.stop
   >
@@ -397,6 +397,7 @@
       {{ t('copy_to_all_pages') }}
     </a>
   </li>
+  
 </template>
 
 <script>
@@ -451,6 +452,12 @@ export default {
     }
   },
   computed: {
+    alignments () {
+      return {
+        'left': 'left',
+        'center': 'center',
+      }
+    },
     schemaAttachmentsIndexes () {
       return (this.template.schema || []).reduce((acc, item, index) => {
         acc[item.attachment_uuid] = index
@@ -507,6 +514,15 @@ export default {
     }
   },
   methods: {
+    onChangeAlignment (event) {
+      if (event.target.value) {
+        this.field.alignment = event.target.value
+      } else {
+        delete this.field.alignment
+      }
+
+      this.save()
+    },
     onChangeValidation (event) {
       if (event.target.value === 'custom') {
         this.field.validation = { pattern: '' }

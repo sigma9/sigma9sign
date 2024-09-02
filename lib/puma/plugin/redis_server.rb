@@ -28,7 +28,7 @@ Puma::Plugin.create do
   def monitor_redis
     loop do
       if redis_dead?
-        Process.kill(:INT, @puma_pid)
+        #Process.kill(:INT, @puma_pid)
 
         break
       end

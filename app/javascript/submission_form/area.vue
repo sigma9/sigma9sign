@@ -23,7 +23,7 @@
     </div>
     <div
       v-if="isActive && withLabel && (!area.option_uuid || !option.value)"
-      class="absolute -top-7 rounded bg-base-content text-base-100 px-2 text-sm whitespace-nowrap pointer-events-none"
+      class="absolute -top-11 rounded bg-base-content text-base-100 px-2 text-sm whitespace-nowrap pointer-events-none"
     >
       <template v-if="area.option_uuid && !option.value">
         {{ optionValue(option) }}
@@ -183,7 +183,7 @@
       v-else
       ref="textContainer"
       dir="auto"
-      class="flex items-center px-0.5 w-full"
+      class="flex items-center px-0.5 w-full flex justify-center"
       :class="alignClasses[field.preferences?.align]"
     >
       <span

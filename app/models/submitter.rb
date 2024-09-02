@@ -65,15 +65,15 @@ class Submitter < ApplicationRecord
 
   def status
     if declined_at?
-      'declinado'
+      'declined'
     elsif completed_at?
-      'completo'
+      'completed'
     elsif opened_at?
-      'aberto'
+      'opened'
     elsif sent_at?
-      'enviado'
+      'sent'
     else
-      'espera'
+      'awaiting'
     end
   end
 
