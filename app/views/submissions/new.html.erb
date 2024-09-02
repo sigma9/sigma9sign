@@ -16,15 +16,7 @@
     <div id="email">
       <%= render 'email_form', template: @template %>
     </div>
-    <div id="phone" class="hidden">
-      <%= render 'phone_form', template: @template %>
-    </div>
-    <div id="detailed" class="hidden">
-      <%= render 'detailed_form', template: @template %>
-    </div>
-    <div id="list" class="hidden">
-      <%= render 'list_form', template: @template %>
-    </div>
+
   </div>
   <%= content_for(:modal_extra) %>
 <% end %>
