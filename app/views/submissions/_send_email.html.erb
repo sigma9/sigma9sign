@@ -3,7 +3,7 @@
   <div class="flex justify-between items-center">
     <%= f.label :send_email, for: uuid = SecureRandom.uuid, class: 'flex items-center cursor-pointer' do %>
       <%= f.check_box :send_email, id: uuid, class: 'base-checkbox', disabled: !can_send_emails, checked: can_send_emails %>
-      <span class="label">Send emails</span>
+      <span class="label"><%= t('submissions_send_emails') %></span>
     <% end %>
     <div>
       <% if can_send_emails %>

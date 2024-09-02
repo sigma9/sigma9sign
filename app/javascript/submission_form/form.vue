@@ -225,6 +225,7 @@
                     </span>
                   </label>
                 </div>
+                <button @click="uncheckAll(currentField)">Uncheck all</button>
               </div>
             </div>
           </div>
@@ -957,6 +958,9 @@ export default {
       } else {
         return `${this.t('option')} ${index + 1}`
       }
+    },
+    uncheckAll(currentField) {
+      return currentField.options.map( ({value}) => value = null)
     },
     maybeTrackEmailClick () {
       const { queryParams } = this

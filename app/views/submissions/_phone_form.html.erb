@@ -52,6 +52,6 @@
     <%= render 'send_sms', f: %>
   </div>
   <div class="form-control">
-    <%= f.button button_title(title: 'Add Recipients'), class: 'base-button' %>
+    <%= f.button button_title(title: t('general_add')+' '+t('recipients')), class: 'base-button' %>
   </div>
 <% end %>
