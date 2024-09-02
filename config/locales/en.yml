@@ -20,121 +20,112 @@ langs: &langs
   language_ko: 한국어
   
 en: &en
-  view: View
-  hi_there: Hi there
-  email: Email
-  form_expired_at_html: 'Form expired on <span class="font-semibold">%{time}</span>'
-  verification_code_code: 'Verification code: %{code}'
-  digitally_signed_by: Digitally signed by
-  role: Role
-  reason: Reason
-  provide_your_email_to_start: Provide your email to start
-  start: Start
-  starting: Starting
-  form_has_been_deleted_by_html: 'Form has been deleted by <span class="font-semibold">%{name}</span>.'
-  invited_by_html: 'Invited by <span class="font-semibold">%{name}</span>'
-  you_have_been_invited_to_submit_a_form: You have been invited to submit a form
-  signed_on_time: 'Signed on %{time}'
-  form_has_been_submitted_already: Form has been submitted already
-  send_copy_to_email: Send copy to Email
-  sending: Sending
-  resubmit: Resubmit
-  form_has_been_deleted_by_html: 'Form has been deleted by <span class="font-semibold">%{name}</span>.'
-  or: or
-  download_documents: Download documents
-  downloading: Downloading
-  download: Download
+  already_have_an_account: Already have an account?
+  archiving: Archiving
+  by_creating_an_account_you_agree_to_our_html: 'By creating an account, you agree to our <a target="_blank" href="https://www.docuseal.co/privacy">Privacy Policy</a> and <a target="_blank" href="https://www.docuseal.co/terms">Terms of Service</a>.'
+  company_name_optional: Company name (optional)
+  completed_successfully: Completed Successfully
+  copied_to_clipboard: Copied to Clipboard
+  copy_share_link: Copy share link
+  create_free_account: Create free account
+  create_free_account: Create Free Account
+  decline_reason: Decline reason
   decline: Decline
   declined: Declined
-  decline_reason: Decline reason
-  provide_a_reason: Provide a reason
-  notify_the_sender_with_the_reason_you_declined: Notify the sender with the reason you declined
-  form_has_been_declined_on_html: 'Form has been declined on <span class="font-semibold">%{time}</span>'
-  name_declined_by_submitter: '"%{name}" declined by %{submitter}'
-  name_declined_by_submitter_with_the_following_reason: '"%{name}" has been declined by %{submitter} with the following reason:'
-  completed_successfully: Completed Successfully
-  password: Password
-  sign_in: Sign In
-  signing_in: Signing In
-  sign_in_with_microsoft: Sign in with Microsoft
-  sign_in_with_google: Sign in with Google
-  forgot_your_password_: Forgot your password?
-  create_free_account: Create free account
-  already_have_an_account: Already have an account?
+  digitally_signed_by: Digitally signed by
+  download_documents: Download documents
+  download: Download
+  downloading: Downloading
+  email: Email
+  enter_email_to_continue: Enter email to continue
   first_name: First name
+  first_party: First Party
+  folder: Folder
+  forgot_your_password_: Forgot your password?
+  form_expired_at_html: 'Form expired on <span class="font-semibold">%{time}</span>'
+  form_has_been_declined_on_html: 'Form has been declined on <span class="font-semibold">%{time}</span>'
+  form_has_been_deleted_by_html: 'Form has been deleted by <span class="font-semibold">%{name}</span>.'
+  form_has_been_submitted_already: Form has been submitted already
+  general_add: Add
+  general_archive: Archive
+  general_archived: Archived
+  general_change: Change
+  general_clone: Clone
+  general_copied: Copied
+  general_copy: Copy
+  general_create: Create
+  general_document: Document
+  general_documents: Documents
+  general_edit: Edit
+  general_export: Export
+  general_name: Name
+  general_new: New
+  general_remove: Remove
+  general_submit: Submit
+  general_toarchive: Archive
+  general_view: View
+  hi_there: Hi there
+  invited_by_html: 'Invited by <span class="font-semibold">%{name}</span>'
   last_name: Last name
-  company_name_optional: Company name (optional)
-  sign_up: Sign up
-  signing_up: Signing up
+  name_declined_by_submitter_with_the_following_reason: '"%{name}" has been declined by %{submitter} with the following reason:'
+  name_declined_by_submitter: '"%{name}" declined by %{submitter}'
+  not_found: not found
+  notify_the_sender_with_the_reason_you_declined: Notify the sender with the reason you declined
+  or: or
+  password: Password
+  processing: Processing
   profile_details: Profile Details
-  create_free_account: Create Free Account
+  provide_a_reason: Provide a reason
+  provide_your_email_to_start: Provide your email to start
+  reason: Reason
+  recipient: Recipient
+  recipients: Recipients
+  resubmit: Resubmit
+  role: Role
+  send_copy_to_email: Send copy to Email
+  sending: Sending
+  settings: Settings
+  sign_in_with_google: Sign in with Google
+  sign_in_with_microsoft: Sign in with Microsoft
+  sign_in: Sign In
   sign_up_with_google: Sign up with Google
   sign_up_with_microsoft: Sign up with Microsoft
-  by_creating_an_account_you_agree_to_our_html: 'By creating an account, you agree to our <a target="_blank" href="https://www.docuseal.co/privacy">Privacy Policy</a> and <a target="_blank" href="https://www.docuseal.co/terms">Terms of Service</a>.'
-  enter_email_to_continue: Enter email to continue
+  sign_up: Sign up
+  signed_on_time: 'Signed on %{time}'
+  signed_with: signed with
+  signing_in: Signing In
+  signing_up: Signing up
+  start: Start
+  starting: Starting
+  submissions_add_new: Add New
+  submissions_add_recipient: Add Recipient
+  submissions_add_recipients: Add Recipients
+  submissions_edit_message: Edit Message
+  submissions_empty: There are no submissions
+  submissions_not_completed_yet: Not completed yet
+  submissions_preserve_order_hint: When checked, notifications will be sent to the second party once the form is completed by the previous party. Uncheck this option to send notifications to all parties simultaneously right away.
+  submissions_preserve_order: Preserve Order
+  submissions_send_emails: Send emails
+  submissions_send_invite: Send invite to complete the file
+  submissions_send_recipients: Send to recipients
+  submissions_sign_in_person: Sign in person
+  submissions_sign_now: Sign now
+  submissions_sign_yourself: Sign yourself
+  submissions_type_emails: Type emails here
+  submissions: Submissions
+  template: Document
+  templates_archived_back_to_active: Back to active
+  templates_dropzone_drop_message: Click to upload or drop here
+  templates_dropzone_upload_new: Click to upload file
+  templates_dropzone_uploading: Uploading...
+  templates_form_preview_exit: Exit preview
+  verification_code_code: 'Verification code: %{code}'
+  view: View
+  you_have_been_invited_to_submit_a_form: You have been invited to submit a form
   doorkeeper:
     scopes:
       write: Update your data
       read: Read your data
-  templates_dropzone_upload_new: Click to upload file
-  templates_dropzone_drop_message: Click to upload or drop here
-  templates_dropzone_uploading: Uploading...
-  templates_archived_back_to_active: Back to active
-  templates_form_preview_exit: Exit preview
-  submissions_empty: There are no submissions
-  submissions_send_invite: Send invite to complete the file
-  submissions_send_recipients: Send to recipients
-  submissions_send_emails: Send emails
-  submissions_sign_yourself: Sign yourself
-  submissions_type_emails: Type emails here
-  submissions: Submissions
-  submissions_sign_now: Sign now
-  submissions_add_new: Add New
-  submissions_add_recipient: Add Recipient
-  submissions_add_recipients: Add Recipients
-  submissions_not_completed_yet: Not completed yet
-  submissions_sign_in_person: Sign in person
-  signed_with: signed with
-  template: Document
-  recipient: Recipient
-  recipients: Recipients
-  archiving: Archiving
-  general_name: Name
-  general_document: Document
-  general_documents: Documents
-  general_export: Export
-  general_new: New
-  general_add: Add
-  general_archive: Archive
-  general_toarchive: Archive
-  general_archived: Archived
-  general_edit: Edit
-  general_view: View
-  general_create: Create
-  general_remove: Remove
-  general_change: Change
-  general_copy: Copy
-  general_copied: Copied
-  general_submit: Submit
-  general_clone: Clone
-  copy_share_link: Copy share link
-  copied_to_clipboard: Copied to Clipboard
-  processing: Processing
-  not_found: not found
-  folder: Folder
-  first_party: First Party
-  devise:
-    sessions:
-      user:
-        signed_in: Signed in
-        signed_out: Signed out
-    failure:
-      user:
-        invalid: Invalid user
-  settings: Settings
-  submissions_preserve_order: Preserve Order
-  submissions_preserve_order_hint: When checked, notifications will be sent to the second party once the form is completed by the previous party. Uncheck this option to send notifications to all parties simultaneously right away.
-  submissions_edit_message: Edit Message
 
 es: &es
   view: Vista
@@ -300,112 +291,111 @@ fr: &fr
   enter_email_to_continue: Entrez votre e-mail pour continuer
 
 pt: &pt
-  view: Visualizar
-  hi_there: Olá,
-  download: Descarregar
+  already_have_an_account: Já tem uma conta?
+  archiving: A Arquivar
+  by_creating_an_account_you_agree_to_our_html: 'Ao criar uma conta, você concorda com nossa <a target="_blank" href="https://www.sigma9.pt/privacy">Política de Privacidade</a> e <a target="_blank" href="https://www.sigma9.pt/terms">Termos de Serviço</a>.'
+  company_name_optional: Nome da empresa (opcional)
+  completed_successfully: Concluído com sucesso
+  copied_to_clipboard: Copiado para o Clipboard
+  copy_share_link: Copiar o link de partilha
+  create_free_account: Criar conta gratuita
+  decline_reason: Motivo da recusa
   decline: Recusar
   declined: Recusado
-  decline_reason: Motivo da recusa
-  provide_a_reason: Forneça um motivo
-  notify_the_sender_with_the_reason_you_declined: Notifique o remetente com o motivo que você recusou
-  form_has_been_declined_on_html: 'O formulário foi recusado em <span class="font-semibold">%{time}</span>'
-  name_declined_by_submitter: '"%{name}" foi recusado por %{submitter}'
-  name_declined_by_submitter_with_the_following_reason: '"%{name}" foi recusado por %{submitter} com o seguinte motivo:'
-  role: Função
-  email: Email
-  reason: Razão
-  verification_code_code: 'Código de verificação: %{code}'
   digitally_signed_by: Assinado digitalmente por
+  download_documents: Descarregar documentos
+  download: Descarregar
+  downloading: A Descarregar
+  email: Email
+  enter_email_to_continue: Insira o e-mail para continuar
+  first_name: Nome
+  first_party: Primeira Parte
+  folder: Pasta
+  forgot_your_password_: Esqueceu sua senha?
   form_expired_at_html: 'O formulário expirou em <span class="font-semibold">%{time}</span>'
-  provide_your_email_to_start: Forneça o seu email para começar
-  start: Iniciar
-  starting: Iniciando
+  form_has_been_declined_on_html: 'O formulário foi recusado em <span class="font-semibold">%{time}</span>'
   form_has_been_deleted_by_html: 'O formulário foi eliminado por <span class="font-semibold">%{name}</span>.'
-  invited_by_html: 'Convidado por <span class="font-semibold">%{name}</span>'
-  you_have_been_invited_to_submit_a_form: Foi convidado a submeter um formulário
-  signed_on_time: 'Assinado em %{time}'
   form_has_been_submitted_already: O formulário já foi submetido
+  general_add: Adicionar
+  general_archive: Arquivo
+  general_archived: Arquivado
+  general_change: Mudar
+  general_clone: Clonar
+  general_copied: Copiado
+  general_copy: Copiar
+  general_create: Criar
+  general_document: Documento
+  general_documents: Documentos
+  general_edit: Editar
+  general_export: Exportar
+  general_name: Nome
+  general_new: Novo
+  general_remove: Remover
+  general_submit: Submeter
+  general_toarchive: Arquivar
+  general_view: Ver
+  hi_there: Olá,
+  invited_by_html: 'Convidado por <span class="font-semibold">%{name}</span>'
+  last_name: Sobrenome
+  name_declined_by_submitter_with_the_following_reason: '"%{name}" foi recusado por %{submitter} com o seguinte motivo:'
+  name_declined_by_submitter: '"%{name}" foi recusado por %{submitter}'
+  not_found: não encontrados
+  notify_the_sender_with_the_reason_you_declined: Notifique o remetente com o motivo que você recusou
+  or: ou
+  password: Senha
+  processing: A processar
+  profile_details: Detalhes do perfil
+  provide_a_reason: Forneça um motivo
+  provide_your_email_to_start: Forneça o seu email para começar
+  reason: Razão
+  recipient: Recipiente
+  recipients: Recipientes
+  resubmit: Reenviar
+  role: Função
   send_copy_to_email: Enviar cópia para Email
   sending: Enviando
-  resubmit: Reenviar
-  or: ou
-  download_documents: Descarregar documentos
-  downloading: A Descarregar
-  completed_successfully: Concluído com sucesso
-  password: Senha
-  sign_in: Entrar
-  signing_in: A Entrar
-  sign_in_with_microsoft: Entrar com Microsoft
+  settings: Configurar
   sign_in_with_google: Entrar com Google
-  forgot_your_password_: Esqueceu sua senha?
-  create_free_account: Criar conta gratuita
-  already_have_an_account: Já tem uma conta?
-  first_name: Nome
-  last_name: Sobrenome
-  company_name_optional: Nome da empresa (opcional)
-  sign_up: Inscrever-se
-  signing_up: A Inscrever-se
-  profile_details: Detalhes do perfil
-  create_free_account: Criar conta gratuita
+  sign_in_with_microsoft: Entrar com Microsoft
+  sign_in: Entrar
   sign_up_with_google: Inscrever-se com Google
   sign_up_with_microsoft: Inscrever-se com Microsoft
-  by_creating_an_account_you_agree_to_our_html: 'Ao criar uma conta, você concorda com nossa <a target="_blank" href="https://www.sigma9.pt/privacy">Política de Privacidade</a> e <a target="_blank" href="https://www.sigma9.pt/terms">Termos de Serviço</a>.'
-  enter_email_to_continue: Insira o e-mail para continuar
-  templates_dropzone_upload_new: Clique para inserir ficheiro
-  templates_dropzone_drop_message: Clique para inserir ou deixe cair aqui
-  templates_dropzone_uploading: A Carregar...
-  templates_archived_back_to_active: Voltar aos activos
-  templates_form_preview_exit: Sair do preview
-  submissions_empty: Não há submissões ainda
-  submissions_send_invite: Enviar convite para completar o ficheiro
-  submissions_send_recipients: Enviar aos recipientes
-  submissions_send_emails: Enviar emails
-  submissions_send_invite: Enviar convite para completar o ficheiro
-  submissions_send_recipients: Enviar aos recipientes
-  submissions_send_emails: Enviar emails
-  submissions_sign_yourself: Assine você mesmo
-  submissions_type_emails: Escrever emails aqui 
-  submissions_type_emails: Escrever emails aqui 
-  submissions: Submissões
-  submissions_sign_now: Assinar agora
+  sign_up: Inscrever-se
+  signed_on_time: 'Assinado em %{time}'
+  signed_with: assinados com 
+  signing_in: A Entrar
+  signing_up: A Inscrever-se
+  start: Iniciar
+  starting: Iniciando
+  submission_has_been_archived: Submissão foi arquivada
+  submission_has_been_removed: Submissão foi removida
+  submission_has_been_unarchived: Submissão foi desarquivada
   submissions_add_new: Adicionar Novo
   submissions_add_recipient: Adicionar Recipiente
   submissions_add_recipients: Adicionar Recipientes
-  submissions_not_completed_yet: Não finalizado ainda
-  submissions_sign_in_person: Assinar pessoalmente
-  submissions_preserve_order: Preservar Ordem
-  submissions_preserve_order_hint: Quando verificada, as notificações serão enviadas à segunda parte assim que o formulário for preenchido pela parte anterior. Desmarque esta opção para enviar notificações a todas as partes simultaneamente imediatamente.
   submissions_edit_message: Editar mensagem
-  signed_with: assinados com 
+  submissions_empty: Não há submissões ainda
+  submissions_not_completed_yet: Não finalizado ainda
+  submissions_preserve_order_hint: Quando verificada, as notificações serão enviadas à segunda parte assim que o formulário for preenchido pela parte anterior. Desmarque esta opção para enviar notificações a todas as partes simultaneamente imediatamente.
+  submissions_preserve_order: Preservar Ordem
+  submissions_send_emails: Enviar emails
+  submissions_send_invite: Enviar convite para completar o ficheiro
+  submissions_send_recipients: Enviar aos recipientes
+  submissions_sign_in_person: Assinar pessoalmente
+  submissions_sign_now: Assinar agora
+  submissions_sign_yourself: Assine você mesmo
+  submissions_type_emails: Escrever emails aqui 
+  submissions: Submissões
   template: Documento
-  recipient: Recipiente
-  recipients: Recipientes
-  archiving: A Arquivar
-  general_name: Nome
-  general_document: Documento
-  general_documents: Documentos
-  general_export: Exportar
-  general_new: Novo
-  general_add: Adicionar
-  general_archive: Arquivo
-  general_toarchive: Arquivar
-  general_archived: Arquivado
-  general_edit: Editar
-  general_view: Ver
-  general_create: Criar
-  general_remove: Remover
-  general_change: Mudar
-  general_copy: Copiar
-  general_copied: Copiado
-  general_submit: Submeter
-  general_submit: Submeter
-  general_clone: Clonar
-  copy_share_link: Copiar o link de partilha
-  copied_to_clipboard: Copiado para o Clipboard
-  processing: A processar
-  not_found: não encontrados
-  folder: Pasta
-  first_party: Primeira Parte
+  templates_archived_back_to_active: Voltar aos activos
+  templates_dropzone_drop_message: Clique para inserir ou deixe cair aqui
+  templates_dropzone_upload_new: Clique para inserir ficheiro
+  templates_form_preview_exit: Sair do preview
+  templates_upload: Carregar Ficheiro
+  templates_uploading: A Carregar
+  verification_code_code: 'Código de verificação: %{code}'
+  view: Visualizar
+  you_have_been_invited_to_submit_a_form: Foi convidado a submeter um formulário
   devise:
     sessions:
       user:
@@ -414,10 +404,6 @@ pt: &pt
       failure:
         user:
           invalid: Utilizador inválido
-  settings: Configurar
-  submission_has_been_removed: Submissão foi removida
-  submission_has_been_archived: Submissão foi arquivada
-  submission_has_been_unarchived: Submissão foi desarquivada
 
 de: &de
   view: Ansicht
