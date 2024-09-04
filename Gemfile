@@ -6,13 +6,13 @@ ruby '3.3.3'
 
 gem 'arabic-letter-connector', require: 'arabic-letter-connector/logic'
 gem 'aws-sdk-s3', require: false
-gem 'aws-sdk-secretsmanager', require: false
 gem 'azure-storage-blob', require: false
 gem 'bootsnap', require: false
 gem 'cancancan'
 gem 'csv'
 gem 'devise'
 gem 'devise-two-factor'
+gem 'dotenv', require: false
 gem 'email_typo'
 gem 'faraday'
 gem 'faraday-follow_redirects'
@@ -22,7 +22,6 @@ gem 'image_processing'
 gem 'jwt'
 gem 'lograge'
 gem 'mysql2', require: false
-gem 'net-smtp', '0.4.0'
 gem 'oj'
 gem 'pagy'
 gem 'pg', require: false
@@ -60,7 +59,6 @@ group :development, :test do
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
   gem 'simplecov', require: false
-  gem 'dotenv'
 end
 
 group :development do
