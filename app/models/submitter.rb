@@ -69,11 +69,11 @@ class Submitter < ApplicationRecord
     elsif completed_at?
       'completed'
     elsif opened_at?
-      'opened'
+      'aberto'
     elsif sent_at?
-      'sent'
+      'enviado'
     else
-      'awaiting'
+      'espera'
     end
   end
 

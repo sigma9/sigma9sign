@@ -81,7 +81,7 @@ en: &en
   templates_dropzone_uploading: Uploading...
   templates_archived_back_to_active: Back to active
   templates_form_preview_exit: Exit preview
-  submissions_empty: No submissions yet
+  submissions_empty: There are no submissions
   submissions_send_invite: Send invite to complete the file
   submissions_send_recipients: Send to recipients
   submissions_send_emails: Send emails
@@ -344,7 +344,7 @@ pt: &pt
   last_name: Sobrenome
   company_name_optional: Nome da empresa (opcional)
   sign_up: Inscrever-se
-  signing_up: A Inscrevenr-se
+  signing_up: A Inscrever-se
   profile_details: Detalhes do perfil
   create_free_account: Criar conta gratuita
   sign_up_with_google: Inscrever-se com Google
