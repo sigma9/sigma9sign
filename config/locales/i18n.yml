@@ -2826,22 +2826,41 @@ fr: &fr
       read: Lire vos données
 
 pt: &pt
+  language_en: English
+  language_en-US: English (US)
+  language_en-GB: English (UK)
+  language_es-ES: Español
+  language_fr-FR: Français
+  language_pt-PT: Português
+  language_de-DE: Deutsch
+  language_es: Español
+  language_it: Italiano
+  language_de: Deutsch
+  language_fr: Français
+  language_pl: Polski
+  language_uk: Українська
+  language_cs: Čeština
+  language_pt: Português
+  language_he: עברית
+  language_nl: Nederlands
+  language_ar: العربية
+  language_ko: 한국어
   partially_completed: Parcialmente concluído
   pending_by_me: Pendente por mim
   add: Adicionar
   adding: Adicionando
   owner: Proprietário
-  select_user: Selecionar usuário
-  team_member_permissions: Permissões de membro da equipe
-  entire_team: Toda a equipe
+  select_user: Selecionar utilizador
+  team_member_permissions: Permissões de membro da equipa
+  entire_team: Toda a equipa
   admin_only: Somente administrador
   accessiable_by: Acessível por
-  team_access: Acesso à equipe
+  team_access: Acesso à equipa
   remove_filter: Remover filtro
   document_download_filename_format: Formato do nome do arquivo de download do documento
   document_name: Nome do documento
   unarchive: Desarquivar
-  awaiting_completion_by_the_other_party: "Aguardando a conclusão pela outra parte"
+  awaiting_completion_by_the_other_party: "A Aguardar a conclusão pela outra parte"
   enforce_recipients_order: 'Forçar a ordem dos recipientes'
   first_party: 'Primeira Parte'
   docuseal_trusted_signature: Assinatura Confiável DocuSeal
@@ -2854,11 +2873,11 @@ pt: &pt
   thanks: Obrigado
   you_have_been_invited_to_submit_the_name_form: 'Você foi convidado a submeter o formulário "%{name}".'
   you_have_been_invited_to_sign_the_name: 'Você foi convidado a assinar "%{name}".'
-  alternatively_you_can_review_and_download_your_copy_using_the_link_below: 'Você pode revisar e baixar sua cópia usando o link abaixo:'
+  alternatively_you_can_review_and_download_your_copy_using_the_link_below: 'Você pode inspeccionar e descarregar a sua cópia usando o link abaixo:'
   please_check_the_copy_of_your_name_in_the_email_attachments: 'Por favor, verifique a cópia de "%{name}" nos anexos do e-mail.'
-  review_and_sign: Revisar e assinar
-  review_and_submit: Revisar e submeter
-  please_contact_us_by_replying_to_this_email_if_you_didn_t_request_this: 'Por favor, entre em contato conosco respondendo a este e-mail se você tiver alguma dúvida.'
+  review_and_sign: Inspeccionar e assinar
+  review_and_submit: Inspeccionar e submeter
+  please_contact_us_by_replying_to_this_email_if_you_didn_t_request_this: 'Por favor, entre em contato connosco respondendo a este e-mail se você tiver alguma dúvida.'
   submitter_invitation_sms_body_sign: '{account.name} convidou você para assinar um documento: {submitter.link}'
   verification_code_sms_body: 'Código de verificação: {code}'
   you_are_invited_to_submit_a_form: Você foi convidado a submeter um formulário
@@ -2888,7 +2907,7 @@ pt: &pt
     Olá,
 
     Por favor, verifique a cópia de seu "{template.name}" nos anexos do e-mail.
-    Alternativamente, você pode revisar e baixar sua cópia usando o link abaixo:
+    Alternativamente, você pode revisar e descarregar a sua cópia usando o link abaixo:
 
     [{template.name}]({documents.link})
 
@@ -2903,7 +2922,7 @@ pt: &pt
   reason: Motivo
   provide_your_email_to_start: Forneça o seu email para começar
   start: Iniciar
-  starting: Iniciando
+  starting: A Iniciar
   form_has_been_deleted_by_html: 'O formulário foi eliminado por <span class="font-semibold">%{name}</span>.'
   invited_by_html: 'Convidado por <span class="font-semibold">%{name}</span>'
   you_have_been_invited_to_submit_a_form: Você foi convidado a submeter um formulário
@@ -2912,12 +2931,12 @@ pt: &pt
   document_has_been_signed_already: 'O documento já foi assinado'
   form_has_been_submitted_already: O formulário já foi submetido
   send_copy_to_email: Enviar cópia para Email
-  sending: Enviando
+  sending: A Enviar
   resubmit: Reenviar
   or: ou
-  download_documents: Baixar documentos
-  downloading: Baixando
-  download: Baixar
+  download_documents: Descarregar documentos
+  downloading: A Descarregar
+  download: Descarregar
   decline: Recusar
   declined: Recusado
   decline_reason: Motivo da recusa
@@ -2927,18 +2946,18 @@ pt: &pt
   name_declined_by_submitter: '"%{name}" foi recusado por %{submitter}'
   name_declined_by_submitter_with_the_following_reason: '"%{name}" foi recusado por %{submitter} com o seguinte motivo:'
   completed_successfully: Concluído com sucesso
-  password: Senha
+  password: Palavra-passe
   sign_in: Entrar
-  signing_in: Entrando
+  signing_in: A Entrar
   sign_in_with_microsoft: Entrar com Microsoft
   sign_in_with_google: Entrar com Google
-  forgot_your_password_: Esqueceu sua senha?
+  forgot_your_password_: Esqueceu a sua palavra-passe?
   create_free_account: Criar conta gratuita
   already_have_an_account: Já tem uma conta?
   first_name: Nome
   last_name: Sobrenome
   sign_up: Inscrever-se
-  signing_up: Inscrevendo-se
+  signing_up: A Inscrever-se
   profile_details: Detalhes do perfil
   sign_up_with_google: Inscrever-se com Google
   sign_up_with_microsoft: Inscrever-se com Microsoft
@@ -2951,7 +2970,7 @@ pt: &pt
   language: Idioma
   app_url: URL do aplicativo
   update: Atualizar
-  updating: Atualizando
+  updating: A Atualizar
   force_2fa_with_authenticator_app: Forçar 2FA com aplicativo Authenticator
   add_signature_id_to_the_documents: Adicionar ID de assinatura aos documentos
   require_signing_reason: Requerer motivo para assinatura
@@ -2971,32 +2990,32 @@ pt: &pt
   schedule_account_for_deletion_: Agendar exclusão da conta?
   account_information_has_been_updated: As informações da conta foram atualizadas.
   should_be_a_valid_url: deve ser um URL válido
-  your_account_removal_request_will_be_processed_within_2_weeks_please_contact_us_if_you_want_to_keep_your_account: Seu pedido de remoção da conta será processado em até 2 semanas. Entre em contato conosco se você quiser manter sua conta.
+  your_account_removal_request_will_be_processed_within_2_weeks_please_contact_us_if_you_want_to_keep_your_account: Seu pedido de remoção da conta será processado em até 2 semanas. Entre em contato conosco se você quiser manter a sua conta.
   test_mode: Modo de teste
   copy: Copiar
   copied: Copiado
-  rotate: Girar
+  rotate: Rodar
   remove_existing_api_token_and_generated_a_new_one_are_you_sure_: Remover token de API existente e gerar um novo. Tem certeza?
   request_signature_multiple_submitters_with_default_values: Solicitar assinatura, múltiplos assinantes com valores padrão
   request_signature_single_submitter: Solicitar assinatura, um único assinante
   template_details: Detalhes do modelo
   open_full_api_reference: Abrir referência completa da API
-  api_token_has_been_updated: O token da API foi atualizado.
-  change_your_password: Altere sua senha
-  new_password: Nova senha
+  api_token_has_been_updated: O token da API foi actualizado.
+  change_your_password: Altere a sua palavra-passe
+  new_password: Nova palavra-passe
   minimum_password_length_characters_minimum: '%{minimum_password_length} caracteres no mínimo'
-  confirm_new_password: Confirmar nova senha
-  change_my_password: Alterar minha senha
-  changing_password: Alterando senha
-  reset_password: Redefinir senha
-  resetting_password: Redefinindo senha
+  confirm_new_password: Confirmar nova palavra-passe
+  change_my_password: Alterar minha palavra-passe
+  changing_password: Alterando palavra-passe
+  reset_password: Redefinir palavra-passe
+  resetting_password: Redefinindo palavra-passe
   sign_in_with_name_account: 'Entrar com conta %{name}'
   two_factor_code_from_authenticator_app: Código de autenticação de dois fatores do aplicativo Authenticator
-  sign_up_in_docuseal_console_to_upgrade_on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: Inscreva-se no console do DocuSeal para fazer o upgrade. O aplicativo local é totalmente independente, o console é usado apenas para gerenciar sua licença.
+  sign_up_in_docuseal_console_to_upgrade_on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: Inscreva-se no console do DocuSeal para fazer o upgrade. O aplicativo local é totalmente independente, o console é usado apenas para gerir a sua licença.
   send_from_email: Enviar do e-mail
   optional: opcional
   save: Salvar
-  saving: Salvando
+  saving: A Salvar
   changes_have_been_saved: As alterações foram salvas.
   unlock_with_docuseal_pro: Desbloquear com o DocuSeal Pro
   use_your_own_certificates_to_sign_and_verify_pdf_files: Use seus próprios certificados para assinar e verificar arquivos PDF.
@@ -3005,10 +3024,10 @@ pt: &pt
   file: Arquivo
   use_a_valid_der_p12_or_pfx_file: Use um arquivo válido .der, .p12 ou .pfx.
   submit: Enviar
-  submitting: Enviando
+  submitting: A Enviar
   pdf_signature: Assinatura PDF
   upload_signed_pdf_file_to_validate_its_signature_: 'Envie o arquivo PDF assinado para validar a assinatura:'
-  analyzing: Analisando
+  analyzing: A Analisar
   verify_signed_pdf: Verificar PDF assinado
   click_to_upload_or_drag_and_drop_html: '<span class="font-medium">Clique para enviar</span> ou arraste e solte'
   click_to_upload_or_drag_and_drop_files_html: '<span class="font-medium">Clique para enviar</span> ou arraste e solte os arquivos'
@@ -3018,7 +3037,7 @@ pt: &pt
   status: Status
   make_default: Tornar padrão
   remove: Remover
-  removing: Removendo
+  removing: A Remover
   delete: Excluir
   default: Padrão
   are_you_sure_: Tem certeza?
@@ -3032,9 +3051,9 @@ pt: &pt
   certificate_has_been_removed: O certificado foi removido.
   already_exists: já existe.
   welcome_to_product_name: 'Bem-vindo(a) ao %{product_name}'
-  set_password: Definir senha
-  confirm_password: Confirmar senha
-  save_password_and_sign_in: Salvar senha e entrar
+  set_password: Definir palavra-passe
+  confirm_password: Confirmar palavra-passe
+  save_password_and_sign_in: Salvar palavra-passe e entrar
   use_an_authenticator_mobile_app_like_google_authenticator_or_1password_to_scan_the_qr_code_below: Use um aplicativo de autenticação móvel como o Google Authenticator ou 1Password para escanear o código QR abaixo.
   remove_2fa: Remover 2FA
   setup_2fa: Configurar 2FA
@@ -3043,7 +3062,7 @@ pt: &pt
   2fa_has_been_removed: 2FA foi removido.
   2fa_has_been_set_up_already: 2FA já foi configurado.
   developer_newsletters: Newsletters para desenvolvedores
-  skip: Pular
+  skip: Saltar
   email_notifications: Notificações por e-mail
   receive_notification_emails_on_completed_submission: Receber notificações por e-mail ao concluir uma submissão
   completed_documents_notification_bcc_address: Endereço BCC para notificações de documentos concluídos
@@ -3077,7 +3096,7 @@ pt: &pt
   attach_audit_log_pdf: Anexar PDF do log de auditoria
   attach_documents: Anexar documentos
   settings_have_been_saved: As configurações foram salvas.
-  display_your_company_name_and_logo_when_signing_documents: Exibir o nome e o logotipo da sua empresa ao assinar documentos.
+  display_your_company_name_and_logo_when_signing_documents: Exibir o nome e o logotipo da a sua empresa ao assinar documentos.
   profile: Perfil
   signature: Assinatura
   update_signature: Atualizar assinatura
@@ -3089,12 +3108,12 @@ pt: &pt
   unable_to_save_initials: Não foi possível salvar as iniciais.
   initials_has_been_saved: As iniciais foram salvas.
   initials_has_been_removed: As iniciais foram removidas.
-  change_password: Alterar senha
+  change_password: Alterar palavra-passe
   two_factor_authentication: Autenticação de dois fatores
   2fa_is_not_configured: 2FA não está configurado
   set_up_2fa: Configurar 2FA
   contact_information_has_been_update: As informações de contato foram atualizadas.
-  password_has_been_changed: A senha foi alterada.
+  password_has_been_changed: A palavra-passe foi alterada.
   email_integration: Integração de e-mail
   send_via_connected_email: Enviar via e-mail conectado
   activate_with_docuseal_pro: Ativar com DocuSeal Pro
@@ -3123,7 +3142,7 @@ pt: &pt
   notifications: Notificações
   e_signature: E-Assinatura
   personalization: Personalização
-  users: Usuários
+  users: Utilizadores
   plans: Planos
   new: Novo
   embedding: Incorporação
@@ -3136,8 +3155,8 @@ pt: &pt
   ai_assistant: Assistente de IA
   discord_community: Comunidade Discord
   integrations: Integrações
-  teams: Equipes
-  tenants: Locatários
+  teams: Equipas
+  tenants: Arrendatários
   send_signature_requests_via_sms: Enviar solicitações de assinatura via SMS
   twilio_settings: Configurações Twilio
   webhook_settings: Configurações de Webhook
@@ -3148,7 +3167,7 @@ pt: &pt
   webhook_integration_allows_to_send_sms_using_any_provider: A integração de Webhook permite enviar SMS usando qualquer provedor
   test: Testar
   single_sign_on_with_saml_2_0: Single Sign-On com SAML 2.0
-  force_sso_disable_login_with_email_and_password: Forçar SSO (desativar login com e-mail e senha)
+  force_sso_disable_login_with_email_and_password: Forçar SSO (desativar login com e-mail e palavra-passe)
   for_aws_s3_compatible_apis_like_minio: Para APIs compatíveis com AWS S3, como Minio.
   store_all_files_on_disk: Armazenar todos os arquivos no disco
   no_configs_are_needed_but_make_sure_your_disk_is_persistent: Nenhuma configuração é necessária, mas certifique-se de que o disco seja persistente
@@ -3195,7 +3214,7 @@ pt: &pt
   completed: Concluído
   primarily_opened_with_microsoft_excel_other_options_include_google_sheets_libreoffice_calc_and_openoffice_calc: Principalmente aberto com Microsoft Excel. Outras opções incluem Google Sheets, LibreOffice Calc e OpenOffice Calc.
   can_be_opened_with_microsoft_excel_google_sheets_or_any_text_editor_like_notepad: Pode ser aberto com Microsoft Excel, Google Sheets ou qualquer editor de texto como o Notepad.
-  draw_signature: Desenhar assinatura
+  draw_signature: Depalavra-passer assinatura
   clear: Limpar
   signature_uploaded: Assinatura enviada
   submission_deletion_is_irreversible_and_will_permanently_remove_all_associated_signed_documents_with_it_are_you_sure_: 'A exclusão da submissão é irreversível e removerá permanentemente todos os documentos assinados associados a ela. Tem certeza?'
@@ -3211,20 +3230,20 @@ pt: &pt
   expired: Expirado
   sign_now: Assinar
   archive: Arquivar
-  archiving: Arquivando
+  archiving: A Arquivar
   restore: Restaurar
-  restoring: Restaurando
+  restoring: A Restaurar
   clone: Clonar
   edit: Editar
   move: Mover
-  moving: Movendo
+  moving: A Mover
   preview: Pré-visualizar
   upload: Enviar
   clone_template: Clonar modelo
   new_document_template: Novo modelo de documento
   document_name: Nome do documento
   change_folder: Alterar pasta
-  shared: Compartilhado
+  shared: Partilhado
   export: Exportar
   there_are_no_submissions: Não há submissões
   send_an_invitation_to_fill_and_complete_the_form: Enviar um convite para preencher e concluir o formulário
@@ -3233,10 +3252,10 @@ pt: &pt
   api_and_embedding: API e Incorporação
   template_id: ID do modelo
   embedding_url: URL de incorporação
-  share_template_with_test_mode: Compartilhar modelo com o modo de teste
-  share_template_with_all_tenants: Compartilhar modelo com todos os locatários
+  share_template_with_test_mode: Partilhar modelo com o modo de teste
+  share_template_with_all_tenants: Partilhar modelo com todos os arrendatários
   use_following_placeholders_text_: 'Use os seguintes textos de substituição:'
-  upgrade_plan_to_add_more_users: Faça upgrade do plano para adicionar mais usuários
+  upgrade_plan_to_add_more_users: Faça upgrade do plano para adicionar mais utilizadors
   move_into_folder: Mover para pasta
   new_folder_name: Novo nome da pasta
   exit_preview: Sair da pré-visualização
@@ -3258,7 +3277,7 @@ pt: &pt
   default_email: E-mail padrão
   processing: Processando
   upload_initials: Enviar iniciais
-  draw: Desenhar
+  draw: Depalavra-passer
   upload_signature: Enviar assinatura
   admin: Administrador
   editor: Editor
@@ -3266,31 +3285,31 @@ pt: &pt
   member: Membro
   agent: Agente
   superadmin: Superadministrador
-  edit_user: Editar usuário
-  new_user: Novo usuário
+  edit_user: Editar utilizador
+  new_user: Novo utilizador
   unarchive: Desarquivar
   role: Função
   last_session: Última sessão
-  unlock_more_user_roles_with_docuseal_pro: Desbloqueie mais funções de usuário com DocuSeal Pro.
+  unlock_more_user_roles_with_docuseal_pro: Desbloqueie mais funções de utilizador com DocuSeal Pro.
   view_active: Ver ativos
-  team_account: Conta de equipe
-  team_accounts: Contas de equipe
-  tenant_account: Conta de locatário
-  tenant_accounts: Contas de locatário
+  team_account: Conta de equipa
+  team_accounts: Contas de equipa
+  tenant_account: Conta de arrendatário
+  tenant_accounts: Contas de arrendatário
   upgrade_plan: Fazer upgrade do plano
-  add_user: Adicionar usuário
+  add_user: Adicionar utilizador
   impersonate: Usurpar
   loading: Carregando
   documents: Documentos
   accounts: Contas
   edit_account: Editar conta
-  new_team: Nova equipe
-  new_tenant: Novo locatário
-  remove_team: Remover equipe
-  remove_tenant: Remover locatário
+  new_team: Nova equipa
+  new_tenant: Novo arrendatário
+  remove_team: Remover equipa
+  remove_tenant: Remover arrendatário
   replace: Substituir
-  allow_tenant_admins_to_invite_new_users: Permitir que administradores de locatários convidem novos usuários
-  manage_multiple_teams: Gerenciar várias equipes
+  allow_tenant_admins_to_invite_new_users: Permitir que administradores de arrendatários convidem novos utilizadors
+  manage_multiple_teams: Gerenciar várias equipas
   api_key: Chave API
   logo: Logotipo
   back: Voltar
@@ -3313,7 +3332,7 @@ pt: &pt
   form_has_been_expired: O formulário expirou.
   form_has_been_declined: O formulário foi recusado.
   file_is_missing: O arquivo está ausente
-  folder_name_has_been_updated: O nome da pasta foi atualizado.
+  folder_name_has_been_updated: O nome da pasta foi actualizado.
   unable_to_rename_folder: Não foi possível renomear a pasta.
   template_has_been_removed: O modelo foi removido.
   template_has_been_archived: O modelo foi arquivado.
@@ -3323,11 +3342,11 @@ pt: &pt
   template_has_been_unarchived: O modelo foi desarquivado.
   submission_has_been_unarchived: A submissao foi desarquivada.
   unable_to_update_file: Não foi possível atualizar o arquivo.
-  user_has_been_updated: O usuário foi atualizado.
-  unable_to_remove_user: Não foi possível remover o usuário.
-  user_has_been_invited: O usuário foi convidado.
-  unable_to_update_user: Não foi possível atualizar o usuário.
-  user_has_been_removed: O usuário foi removido.
+  user_has_been_updated: O utilizador foi actualizado.
+  unable_to_remove_user: Não foi possível remover o utilizador.
+  user_has_been_invited: O utilizador foi convidado.
+  unable_to_update_user: Não foi possível atualizar o utilizador.
+  user_has_been_removed: O utilizador foi removido.
   invalid_pdf: PDF inválido
   webhook_secret_has_been_saved: O segredo do Webhook foi salvo.
   webhook_url_has_been_saved: A URL do Webhook foi salva.
@@ -3351,9 +3370,9 @@ pt: &pt
   logo_has_been_uploaded: O logotipo foi enviado.
   invalid_file_type: Tipo de arquivo inválido
   upload_file: Enviar arquivo
-  upgrade_your_plan_to_invite_more_users_contact_email: 'Faça upgrade do seu plano para convidar mais usuários (contato %{email}).'
-  contact_your_admin_email_to_invite_more_users: 'Entre em contato com seu administrador %{email} para convidar mais usuários.'
-  contact_your_administrator_to_add_new_users: Entre em contato com seu administrador para adicionar novos usuários.
+  upgrade_your_plan_to_invite_more_users_contact_email: 'Faça upgrade do seu plano para convidar mais utilizadors (contato %{email}).'
+  contact_your_admin_email_to_invite_more_users: 'Entre em contato com seu administrador %{email} para convidar mais utilizadors.'
+  contact_your_administrator_to_add_new_users: Entre em contato com seu administrador para adicionar novos utilizadors.
   one_hour: 1 hora
   two_hours: 2 horas
   four_hours: 4 horas
@@ -3366,10 +3385,10 @@ pt: &pt
   fifteen_days: 15 dias
   free: Gratuito
   unlimited_documents_storage: Armazenamento ilimitado de documentos
-  users_management: Gerenciamento de usuários
+  users_management: Gerenciamento de utilizadores
   ten_filed_types: 10 tipos de campo
-  multiple_signers: Múltiplos signatários
-  automatic_esignature: Assinatura eletrônica automática
+  multiple_signers: Múltiplos assinantes
+  automatic_esignature: Assinatura digital automática
   ten_signature_request_emails_per_month: 10 e-mails de solicitação de assinatura por mês
   unlimited_sign_yourself: Assinatura ilimitada por você mesmo
   free_developer_testing_sandbox: Sandbox de teste gratuito para desenvolvedores
@@ -3379,13 +3398,13 @@ pt: &pt
   connect_own_email_address: Conectar endereço de e-mail próprio
   personalize_email_content: Personalizar conteúdo do e-mail
   automated_reminders: Lembretes automáticos
-  bulk_send_from_spreadsheet: Envio em massa de uma planilha
+  bulk_send_from_spreadsheet: Envio em massa de uma plano
   identify_verification_via_sms: Verificação de identidade via SMS
   start_with_pro: Começar com Pro
-  user_month: usuário / mês
+  user_month: utilizador / mês
   developer_sandbox: Sandbox para desenvolvedores
   upgrade_to_start_using_in_production_html: '<a href="%{url}" target="_blank" class="link font-semibold">Atualizar</a> para começar a usar em produção.'
-  download_combined_pdf: Baixar PDF combinado
+  download_combined_pdf: Descarregar PDF combinado
   audit_log: Log de auditoria
   signers: Signatários
   not_invited_yet: Ainda não convidado
@@ -3396,19 +3415,19 @@ pt: &pt
   send_email_copy_with_completed_documents_to_a_specified_bcc_address: Envie uma cópia do e-mail com documentos concluídos para um endereço BCC especificado.
   re_send_email: Reenviar e-mail
   send_email: Enviar e-mail
-  copy_share_link: Copiar link de compartilhamento
+  copy_share_link: Copiar link de partilha
   copied_to_clipboard: Copiado para a área de transferência
   link: Link
   via_email: via E-mail
   via_phone: via Telefone
   detailed: Detalhado
   upload_list: Carregar lista
-  creating: Criando
+  creating: A Criar
   open_source_documents_software: software de documentos de código aberto
   copy_link: Copiar link
   opened: Aberto
   sent: Enviado
-  awaiting: Aguardando
+  awaiting: A Aguardar
   document_id: ID do Documento
   envelope_id: ID do Envelope
   event_log: Log de Eventos
@@ -3446,11 +3465,11 @@ pt: &pt
   edit_recipient: Editar Destinatário
   update_recipient: Atualizar Destinatário
   use_international_format_1xxx_: 'Use o formato internacional: +1xxx...'
-  submitter_cannot_be_updated: O remetente não pode ser atualizado.
+  submitter_cannot_be_updated: O remetente não pode ser actualizado.
   at_least_one_field_must_be_filled: Pelo menos um campo deve ser preenchido.
-  archived_users: Usuários Arquivados
-  embedding_users: Usuários Incorporados
-  view_embedding_users: Ver Usuários Incorporados
+  archived_users: Utilizadores Arquivados
+  embedding_users: Utilizadores Incorporados
+  view_embedding_users: Ver Utilizadores Incorporados
   key: Chave
   value: Valor
   webhook_secret: Segredo do Webhook
@@ -3471,7 +3490,7 @@ pt: &pt
   privacy_policy: Política de Privacidade
   the_code_has_been_sent_to_your_email: O código foi enviado para seu e-mail.
   enter_the_verification_code_from_your_email: Insira o código de verificação do seu e-mail.
-  too_many_attempts: Muitas tentativas.
+  too_many_attempts: Demasiadas tentativas.
   verification_code: Código de Verificação
   resend_code: Reenviar Código
   verify_new_sign_in: Verificar novo login
@@ -3479,7 +3498,7 @@ pt: &pt
   complete_sign_in: Concluir Login
   please_reply_to_this_email_if_you_dont_recognize_this_sign_in_attempt: Responda a este e-mail se você não reconhecer esta tentativa de login.
   docuseal_support: Suporte DocuSeal
-  use_the_edit_form_to_move_it_to_another_team: Use o formulário de edição para movê-lo para outra equipe.
+  use_the_edit_form_to_move_it_to_another_team: Use o formulário de edição para movê-lo para outra equipa.
   too_many_sms_attempts_try_again_in_a_few_seconds: Muitas tentativas de SMS. Tente novamente em alguns segundos.
   number_phone_number_is_invalid: "O número de telefone +%{number} é inválido"
   make_com_integration: Integração com Make.com
@@ -3487,7 +3506,7 @@ pt: &pt
   seamlessly_automate_your_document_signing_process_with_make_com: Automatize perfeitamente seu processo de assinatura de documentos com o Make.com.
   find_suitable_zapier_templates_to_automate_your_workflow: Encontre modelos Zapier adequados para automatizar seu fluxo de trabalho.
   get_started: Começar
-  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.docuseal.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Clique aqui</a> para saber mais sobre os papéis e permissões dos usuários.'
+  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.docuseal.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Clique aqui</a> para saber mais sobre os papéis e permissões dos utilizadors.'
   count_10_signature_request_emails_sent_this_month_upgrade_to_pro_to_send_unlimited_signature_request_email: '%{count} / 10 e-mails de solicitação de assinatura enviados este mês. Faça upgrade para Pro para enviar solicitações de assinatura ilimitadas.'
   test_mode_emails_limit_will_be_reset_within_24_hours: O limite de e-mails no modo de teste será redefinido em 24 horas.
   submission_event_names:
@@ -3507,25 +3526,33 @@ pt: &pt
     complete_verification_by_html: '<b>Verificação de identidade concluída</b> por %{submitter_name} com %{provider}'
     api_complete_form_by_html: '<b>Submissão concluída via API</b> por %{submitter_name}'
   import_list:
-    select_worksheet: Selecionar planilha
+    select_worksheet: Selecionar plano
     open: Abrir
     remove: Remover
     recipient_field: Campo de destinatário
-    spreadsheet_column: Coluna da planilha
+    spreadsheet_column: Coluna da plano
     select_field: Selecionar campo
     select_column: Selecionar coluna
     new_field_mapping: Novo mapeamento de campo
     total_entries: Entradas totais
-    upload_csv_or_xlsx_spreadsheet: Enviar planilha CSV ou XLSX
+    upload_csv_or_xlsx_spreadsheet: Enviar plano CSV ou XLSX
     click_to_upload: Clique para enviar
     or_drag_and_drop_files: ou arraste e solte os arquivos.
     or: Ou
-    download: baixe
-    a_sample_spreadsheet_to_fill_and_import: uma planilha de exemplo para preencher e importar.
+    download: descarregar
+    a_sample_spreadsheet_to_fill_and_import: uma plano de exemplo para preencher e importar.
   doorkeeper:
     scopes:
-      write: Atualizar seus dados
+      write: Actualizar seus dados
       read: Ler seus dados
+  devise:
+    sessions:
+      user:
+        signed_in: Iniciou a sessão
+        signed_out: Fechou a sessão
+      failure:
+        user:
+          invalid: Utilizador inválido
 
 de: &de
   partially_completed: Teilweise abgeschlossen

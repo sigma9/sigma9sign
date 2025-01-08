@@ -111,7 +111,6 @@ export default {
         cells: this.t('cells'),
         stamp: this.t('stamp'),
         payment: this.t('payment'),
-        phone: this.t('phone'),
         verification: this.t('verify_id')
       }
     },
@@ -131,7 +130,6 @@ export default {
         cells: this.t('cells_field'),
         stamp: this.t('stamp_field'),
         payment: this.t('payment_field'),
-        phone: this.t('phone_field'),
         verification: this.t('verify_id')
       }
     },
@@ -152,7 +150,6 @@ export default {
         cells: IconColumns3,
         stamp: IconRubberStamp,
         payment: IconCreditCard,
-        phone: IconPhoneCheck,
         verification: IconId
       }
     },

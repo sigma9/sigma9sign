@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class ApplicationMailer < ActionMailer::Base
-  default from: 'DocuSeal <info@docuseal.com>'
+  default from: 'Sigma9Sign <info@sigma9.pt>'
   layout 'mailer'
 
   register_interceptor ActionMailerConfigsInterceptor

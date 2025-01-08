@@ -27,7 +27,7 @@
     </label>
   </div>
   <div
-    v-if="['number', 'cells'].includes(field.type)"
+    v-if="['number', 'cells', 'text'].includes(field.type)"
     class="py-1.5 px-1 relative"
     @click.stop
   >
@@ -38,7 +38,7 @@
       <option
         v-for="value in ['left', 'right', field.type === 'cells' ? null : 'center'].filter(Boolean)"
         :key="value"
-        :selected="field.preferences?.align ? value === field.preferences.align : value === 'left'"
+        :selected="field.preferences?.align ? value === field.preferences.align : value === 'center'"
         :value="value"
       >
         {{ t(value) }}
@@ -451,6 +451,12 @@ export default {
     }
   },
   computed: {
+    alignments () {
+      return {
+        left: 'left',
+        center: 'center'
+      }
+    },
     schemaAttachmentsIndexes () {
       return (this.template.schema || []).reduce((acc, item, index) => {
         acc[item.attachment_uuid] = index
@@ -507,6 +513,15 @@ export default {
     }
   },
   methods: {
+    onChangeAlignment (event) {
+      if (event.target.value) {
+        this.field.alignment = event.target.value
+      } else {
+        delete this.field.alignment
+      }
+
+      this.save()
+    },
     onChangeValidation (event) {
       if (event.target.value === 'custom') {
         this.field.validation = { pattern: '' }

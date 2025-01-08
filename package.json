@@ -1,5 +1,5 @@
 {
-  "name": "docuseal",
+  "name": "sigma9sign",
   "private": true,
   "dependencies": {
     "@babel/core": "7.21.8",

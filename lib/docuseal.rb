@@ -2,18 +2,18 @@
 
 module Docuseal
   URL_CACHE = ActiveSupport::Cache::MemoryStore.new
-  PRODUCT_URL = 'https://www.docuseal.com'
+  PRODUCT_URL = 'https://sign.sigma9.pt'
   PRODUCT_EMAIL_URL = ENV.fetch('PRODUCT_EMAIL_URL', PRODUCT_URL)
   NEWSLETTER_URL = "#{PRODUCT_URL}/newsletters".freeze
   ENQUIRIES_URL = "#{PRODUCT_URL}/enquiries".freeze
-  PRODUCT_NAME = 'DocuSeal'
+  PRODUCT_NAME = 'Sigma9Sign'
   DEFAULT_APP_URL = ENV.fetch('APP_URL', 'http://localhost:3000')
-  GITHUB_URL = 'https://github.com/docusealco/docuseal'
+  GITHUB_URL = 'https://github.com/sigma9/sigma9sign'
   DISCORD_URL = 'https://discord.gg/qygYCDGck9'
   TWITTER_URL = 'https://twitter.com/docusealco'
   TWITTER_HANDLE = '@docusealco'
   CHATGPT_URL = 'https://chatgpt.com/g/g-9hg8AAw0r-docuseal'
-  SUPPORT_EMAIL = 'support@docuseal.com'
+  SUPPORT_EMAIL = 'support@sigma9.pt'
   HOST = ENV.fetch('HOST', 'localhost')
   AATL_CERT_NAME = 'docuseal_aatl'
   CONSOLE_URL = if Rails.env.development?
