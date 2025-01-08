@@ -1,5 +1,7 @@
 <%= render 'shared/turbo_modal_large', title: params[:selfsign] ? t('add_recipients') : t('add_new_recipients') do %>
-  <% options = [[t('via_email'), 'email'], [t('via_phone'), 'phone'], [t('detailed'), 'detailed'], [t('upload_list'), 'list']].compact %>
+  <% options = [[t('via_email'), 'email']
+  #              , [t('via_phone'), 'phone'], [t('detailed'), 'detailed'], [t('upload_list'), 'list']
+  ].compact %>
   <toggle-visible data-element-ids="<%= options.map(&:last).to_json %>" class="relative text-center px-2 mt-4 block">
     <div class="flex justify-center">
       <% options.each_with_index do |(label, value), index| %>
@@ -16,15 +18,7 @@
     <div id="email">
       <%= render 'email_form', template: @template %>
     </div>
-    <div id="phone" class="hidden">
-      <%= render 'phone_form', template: @template %>
-    </div>
-    <div id="detailed" class="hidden">
-      <%= render 'detailed_form', template: @template %>
-    </div>
-    <div id="list" class="hidden">
-      <%= render 'list_form', template: @template %>
-    </div>
+
   </div>
   <%= content_for(:modal_extra) %>
 <% end %>
