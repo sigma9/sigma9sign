@@ -3,37 +3,56 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-    image: docuseal/docuseal:latest
+    build: .
     ports:
-      - 3000:3000
+      - 127.0.0.1:3000:3000
     volumes:
       - ./docuseal:/data/docuseal
     environment:
+      - HOST=${HOST}
       - FORCE_SSL=${HOST}
       - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/docuseal
+      - RUN_MIGRATION=false
+      - RAILS_ENV=production
+
+  redis:
+    image: redis:7.0
+    volumes:
+      - './redis_data:/data/redis'
+    ports:
+      - 127.0.0.1:6379:6379
 
   postgres:
     image: postgres:15
+
     volumes:
       - './pg_data:/var/lib/postgresql/data'
+      #- './postgresql.conf:/var/lib/postgresql/data/postgresql.conf'
     environment:
+      #PGDATA: '/var/lib/postgresql/data/pgdata'
+      WAL_LEVEL: logical
+      PGUSER: postgres
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: docuseal
+      POSTGRES_DB: docuseal_dev
+      POSTGRES_HOST_AUTH_METHOD: 'scram-sha-256'
+      POSTGRES_INITDB_ARGS: '--auth-host=scram-sha-256 --auth-local=scram-sha-256'
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 5s
       timeout: 5s
       retries: 5
-
-  caddy:
-    image: caddy:latest
-    command: caddy reverse-proxy --from $HOST --to app:3000
     ports:
-      - 80:80
-      - 443:443
-      - 443:443/udp
-    volumes:
-      - .:/data
-    environment:
-      - HOST=${HOST}
+      - 127.0.0.1:5432:5432
+
+        #caddy:
+        #image: caddy:latest
+        #command: caddy reverse-proxy --from $HOST --to app:3000
+        #ports:
+        #- 80:80
+        #- 443:443
+        #- 443:443/udp
+        #volumes:
+        #- .:/data
+        #environment:
+        #- HOST=${HOST}
