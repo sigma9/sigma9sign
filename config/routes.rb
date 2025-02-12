@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   root 'dashboard#index'
 
   get 'up' => 'rails/health#show'
+  get 'manifest' => 'pwa#manifest'
 
   devise_for :users,
              path: '/', only: %i[sessions passwords omniauth_callbacks],
@@ -144,9 +145,7 @@ Rails.application.routes.draw do
     get :completed
   end
 
-  resources :send_submission_email, only: %i[create] do
-    get :success, on: :collection
-  end
+  resources :send_submission_email, only: %i[create]
 
   resources :submitters, only: %i[], param: 'slug' do
     resources :download, only: %i[index], controller: 'submissions_download'
